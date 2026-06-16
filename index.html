@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Dailio Construtora — Engenharia, Obras e Energia Solar</title>
 <meta name="description" content="Especialistas em projetos de engenharia, obras residenciais e comerciais, e instalação de energia solar. Solicite seu orçamento gratuito.">
+<link rel="icon" type="image/png" href="assets/logo.png">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,700;1,800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/css/global.css">
 <link rel="stylesheet" href="assets/css/home.css">
@@ -15,8 +16,7 @@
 <nav>
   <div class="nav-in">
     <a href="index.html" class="logo">
-      <div class="logo-icon"><svg viewBox="0 0 24 24"><path d="M3 10.5L12 3l9 7.5V21H3V10.5z"/></svg></div>
-      <span class="logo-name">Dailio</span>
+      <img src="assets/logo.png" alt="Logo Dailio" style="height: 60px;">
     </a>
     <ul class="nav-links">
       <li><a href="#" class="active">Home</a></li>
@@ -32,9 +32,8 @@
 </nav>
 
 <!-- ════════ WHATSAPP FLUTUANTE ════════ -->
-<a href="https://wa.me/5511999999999?text=Olá!%20Vim%20pelo%20site%20e%20gostaria%20de%20um%20orçamento." class="wa-float" target="_blank" rel="noopener">
+<a href="https://wa.me/5532999646275?text=Olá!%20Vim%20pelo%20site%20e%20gostaria%20de%20um%20orçamento." class="wa-float" target="_blank" rel="noopener">
   <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.128.558 4.127 1.534 5.862L.054 23.496a.75.75 0 0 0 .932.932l5.638-1.478A11.955 11.955 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.88 0-3.645-.52-5.153-1.424l-.369-.22-3.822 1.002 1.022-3.718-.242-.378A9.96 9.96 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
-  Fale no WhatsApp
 </a>
 
 <!-- ════════ 1. HERO ════════ -->
@@ -233,53 +232,57 @@
     </div>
     <div class="port-grid">
       <div class="port-card">
-        <div class="port-card-img"><img src="https://images.unsplash.com/photo-1580587771525-78b9dba3b914?w=700&q=80" alt="Residência Alto Padrão"/></div>
-        <div class="port-overlay"><a href="#contato" class="port-see">Ver Projeto →</a></div>
-        <div class="port-card-foot"><div class="port-cat">Obras · Residencial</div><div class="port-name">Residência Alto Padrão</div><div class="port-loc">São Paulo, SP · 2024</div></div>
-      </div>
-      <div class="port-card">
-        <div class="port-card-img"><img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=700&q=80" alt="Torre Comercial"/></div>
+        <div class="port-card-img" style="position: relative;">
+          <div class="carousel-track" style="display: flex; overflow-x: hidden; scroll-snap-type: x mandatory; scrollbar-width: none; height: 100%; width: 100%;">
+            <img src="public/imagens%20eng/02.jpeg" alt="Torre Comercial 02" style="flex: 0 0 100%; object-fit: cover; scroll-snap-align: start; min-width: 100%;">
+            <img src="public/imagens%20eng/03.jpeg" alt="Torre Comercial 03" style="flex: 0 0 100%; object-fit: cover; scroll-snap-align: start; min-width: 100%;">
+            <img src="public/imagens%20eng/04.jpeg" alt="Torre Comercial 04" style="flex: 0 0 100%; object-fit: cover; scroll-snap-align: start; min-width: 100%;">
+            <img src="public/imagens%20eng/05.jpeg" alt="Torre Comercial 05" style="flex: 0 0 100%; object-fit: cover; scroll-snap-align: start; min-width: 100%;">
+            <img src="public/imagens%20eng/06.jpeg" alt="Torre Comercial 06" style="flex: 0 0 100%; object-fit: cover; scroll-snap-align: start; min-width: 100%;">
+          </div>
+          <button style="position: absolute; left: 8px; top: 50%; transform: translateY(-50%); background: rgba(255,255,255,0.8); color: #1a1a1a; border: none; width: 28px; height: 28px; display: flex; align-items: center; justify-content: center; cursor: pointer; border-radius: 50%; z-index: 10; font-size: 14px; box-shadow: 0 2px 5px rgba(0,0,0,0.2);" onclick="event.preventDefault(); event.stopPropagation(); this.parentElement.querySelector('.carousel-track').scrollBy({left: -this.parentElement.querySelector('.carousel-track').clientWidth, behavior: 'smooth'})">❮</button>
+          <button style="position: absolute; right: 8px; top: 50%; transform: translateY(-50%); background: rgba(255,255,255,0.8); color: #1a1a1a; border: none; width: 28px; height: 28px; display: flex; align-items: center; justify-content: center; cursor: pointer; border-radius: 50%; z-index: 10; font-size: 14px; box-shadow: 0 2px 5px rgba(0,0,0,0.2);" onclick="event.preventDefault(); event.stopPropagation(); this.parentElement.querySelector('.carousel-track').scrollBy({left: this.parentElement.querySelector('.carousel-track').clientWidth, behavior: 'smooth'})">❯</button>
+        </div>
         <div class="port-overlay"><a href="#contato" class="port-see">Ver Projeto →</a></div>
         <div class="port-card-foot"><div class="port-cat">Engenharia · Comercial</div><div class="port-name">Torre Corporativa</div><div class="port-loc">Campinas, SP · 2023</div></div>
       </div>
       <div class="port-card">
-        <div class="port-card-img"><img src="https://images.unsplash.com/photo-1509391366360-2e959784a276?w=700&q=80" alt="Energia Solar Industrial"/></div>
+        <div class="port-card-img" style="position: relative;">
+          <div class="carousel-track" style="display: flex; overflow-x: hidden; scroll-snap-type: x mandatory; scrollbar-width: none; height: 100%; width: 100%;">
+            <img src="public/obras/WhatsApp%20Image%202026-06-15%20at%2013.26.36.jpeg" alt="Residência Alto Padrão 2" style="flex: 0 0 100%; object-fit: cover; scroll-snap-align: start; min-width: 100%;">
+            <img src="public/obras/WhatsApp%20Image%202026-06-15%20at%2013.26.36%20(1).jpeg" alt="Residência Alto Padrão 3" style="flex: 0 0 100%; object-fit: cover; scroll-snap-align: start; min-width: 100%;">
+            <img src="public/obras/WhatsApp%20Image%202026-06-15%20at%2013.26.37.jpeg" alt="Residência Alto Padrão 4" style="flex: 0 0 100%; object-fit: cover; scroll-snap-align: start; min-width: 100%;">
+            <img src="public/obras/WhatsApp%20Image%202026-06-15%20at%2013.26.37%20(1).jpeg" alt="Residência Alto Padrão 5" style="flex: 0 0 100%; object-fit: cover; scroll-snap-align: start; min-width: 100%;">
+          </div>
+          <button style="position: absolute; left: 8px; top: 50%; transform: translateY(-50%); background: rgba(255,255,255,0.8); color: #1a1a1a; border: none; width: 28px; height: 28px; display: flex; align-items: center; justify-content: center; cursor: pointer; border-radius: 50%; z-index: 10; font-size: 14px; box-shadow: 0 2px 5px rgba(0,0,0,0.2);" onclick="event.preventDefault(); event.stopPropagation(); this.parentElement.querySelector('.carousel-track').scrollBy({left: -this.parentElement.querySelector('.carousel-track').clientWidth, behavior: 'smooth'})">❮</button>
+          <button style="position: absolute; right: 8px; top: 50%; transform: translateY(-50%); background: rgba(255,255,255,0.8); color: #1a1a1a; border: none; width: 28px; height: 28px; display: flex; align-items: center; justify-content: center; cursor: pointer; border-radius: 50%; z-index: 10; font-size: 14px; box-shadow: 0 2px 5px rgba(0,0,0,0.2);" onclick="event.preventDefault(); event.stopPropagation(); this.parentElement.querySelector('.carousel-track').scrollBy({left: this.parentElement.querySelector('.carousel-track').clientWidth, behavior: 'smooth'})">❯</button>
+        </div>
+        <div class="port-overlay"><a href="#contato" class="port-see">Ver Projeto →</a></div>
+        <div class="port-card-foot"><div class="port-cat">Obras · Residencial</div><div class="port-name">Residência Alto Padrão</div><div class="port-loc">São Paulo, SP · 2024</div></div>
+      </div>
+      <div class="port-card">
+        <div class="port-card-img" style="position: relative;">
+          <div class="carousel-track" style="display: flex; overflow-x: hidden; scroll-snap-type: x mandatory; scrollbar-width: none; height: 100%; width: 100%;">
+            <img src="public/imagens%20eltro/01.png" alt="Energia Solar Industrial 1" style="flex: 0 0 100%; object-fit: cover; scroll-snap-align: start; min-width: 100%;">
+            <img src="public/imagens%20eltro/02.png" alt="Energia Solar Industrial 2" style="flex: 0 0 100%; object-fit: cover; scroll-snap-align: start; min-width: 100%;">
+            <img src="public/imagens%20eltro/03.png" alt="Energia Solar Industrial 3" style="flex: 0 0 100%; object-fit: cover; scroll-snap-align: start; min-width: 100%;">
+            <img src="public/imagens%20eltro/04.png" alt="Energia Solar Industrial 4" style="flex: 0 0 100%; object-fit: cover; scroll-snap-align: start; min-width: 100%;">
+            <img src="public/imagens%20eltro/05.png" alt="Energia Solar Industrial 5" style="flex: 0 0 100%; object-fit: cover; scroll-snap-align: start; min-width: 100%;">
+          </div>
+          <button style="position: absolute; left: 8px; top: 50%; transform: translateY(-50%); background: rgba(255,255,255,0.8); color: #1a1a1a; border: none; width: 28px; height: 28px; display: flex; align-items: center; justify-content: center; cursor: pointer; border-radius: 50%; z-index: 10; font-size: 14px; box-shadow: 0 2px 5px rgba(0,0,0,0.2);" onclick="event.preventDefault(); event.stopPropagation(); this.parentElement.querySelector('.carousel-track').scrollBy({left: -this.parentElement.querySelector('.carousel-track').clientWidth, behavior: 'smooth'})">❮</button>
+          <button style="position: absolute; right: 8px; top: 50%; transform: translateY(-50%); background: rgba(255,255,255,0.8); color: #1a1a1a; border: none; width: 28px; height: 28px; display: flex; align-items: center; justify-content: center; cursor: pointer; border-radius: 50%; z-index: 10; font-size: 14px; box-shadow: 0 2px 5px rgba(0,0,0,0.2);" onclick="event.preventDefault(); event.stopPropagation(); this.parentElement.querySelector('.carousel-track').scrollBy({left: this.parentElement.querySelector('.carousel-track').clientWidth, behavior: 'smooth'})">❯</button>
+        </div>
         <div class="port-overlay"><a href="#contato" class="port-see">Ver Projeto →</a></div>
         <div class="port-card-foot"><div class="port-cat">Energia Solar · Industrial</div><div class="port-name">Usina Solar Industrial</div><div class="port-loc">Ribeirão Preto, SP · 2024</div></div>
-      </div>
-      <div class="port-card">
-        <div class="port-card-img"><img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=700&q=80" alt="Escola"/></div>
-        <div class="port-overlay"><a href="#contato" class="port-see">Ver Projeto →</a></div>
-        <div class="port-card-foot"><div class="port-cat">Obras · Educação</div><div class="port-name">Colégio Dailio</div><div class="port-loc">Santos, SP · 2023</div></div>
-      </div>
-      <div class="port-card">
-        <div class="port-card-img"><img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=700&q=80" alt="Residência Moderna"/></div>
-        <div class="port-overlay"><a href="#contato" class="port-see">Ver Projeto →</a></div>
-        <div class="port-card-foot"><div class="port-cat">Obras · Residencial</div><div class="port-name">Residência Moderna</div><div class="port-loc">Barueri, SP · 2024</div></div>
-      </div>
-      <div class="port-card">
-        <div class="port-card-img"><img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=700&q=80" alt="Ponte"/></div>
-        <div class="port-overlay"><a href="#contato" class="port-see">Ver Projeto →</a></div>
-        <div class="port-card-foot"><div class="port-cat">Engenharia · Infraestrutura</div><div class="port-name">Viaduto Municipal</div><div class="port-loc">Sorocaba, SP · 2022</div></div>
       </div>
     </div>
   </div>
 </section>
 
 <!-- ════════ 7. CTA BANNER ════════ -->
-<section id="cta-banner">
-  <div class="cta-banner-in">
-    <div class="cta-banner-txt">
-      <h2>Pronto para começar<br>seu projeto?</h2>
-      <p>Orçamento gratuito, sem burocracia. Resposta em até 4 horas.</p>
-    </div>
-    <div class="cta-banner-btns">
-      <a href="https://wa.me/5511999999999?text=Olá!%20Quero%20um%20orçamento." target="_blank" rel="noopener" class="btn-dk">
-        <svg viewBox="0 0 24 24" style="width:18px;height:18px;fill:#fff;stroke:none"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347zM12 0C5.373 0 0 5.373 0 12c0 2.128.558 4.127 1.534 5.862L.054 23.496a.75.75 0 0 0 .932.932l5.638-1.478A11.955 11.955 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.88 0-3.645-.52-5.153-1.424l-.369-.22-3.822 1.002 1.022-3.718-.242-.378A9.96 9.96 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
-        WhatsApp
-      </a>
-      <a href="#contato" class="btn-dark-outline">Formulário de Contato</a>
-    </div>
+<section id="cta-banner" style="background-color: #000; padding: 80px 0;">
+  <div class="cta-banner-in" style="justify-content: center; text-align: center;">
+    <img src="assets/logo2.png" alt="Logo Dailio" style="max-height: 300px; width: auto;">
   </div>
 </section>
 
@@ -319,7 +322,7 @@
         <h2 class="sec-h2">Perguntas<br>Frequentes</h2>
         <p class="sec-p">Tire suas dúvidas sobre nossos serviços. Caso não encontre o que procura, entre em contato — respondemos em até 4 horas.</p>
         <br>
-        <a href="https://wa.me/5511999999999" target="_blank" rel="noopener" class="btn-y" style="margin-top:8px">
+        <a href="https://wa.me/5532999646275" target="_blank" rel="noopener" class="btn-y" style="margin-top:8px">
           <svg viewBox="0 0 24 24" style="width:16px;height:16px;fill:var(--dk);stroke:none"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347zM12 0C5.373 0 0 5.373 0 12c0 2.128.558 4.127 1.534 5.862L.054 23.496a.75.75 0 0 0 .932.932l5.638-1.478A11.955 11.955 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.88 0-3.645-.52-5.153-1.424l-.369-.22-3.822 1.002 1.022-3.718-.242-.378A9.96 9.96 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
           Perguntar no WhatsApp
         </a>
@@ -363,7 +366,7 @@
       <div class="ct-info">
         <div class="ct-info-item">
           <div class="ct-info-icon"><svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.35 2 2 0 0 1 3.6 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.63a16 16 0 0 0 6.29 6.29l.95-.95a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div>
-          (11) 99999-9999
+          (32) 99964-6275
         </div>
         <div class="ct-info-item">
           <div class="ct-info-icon"><svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div>
@@ -409,11 +412,13 @@
 <footer>
   <div class="ft-top">
     <div class="ft-brand">
-      <a href="index.html" class="logo" style="display:inline-flex;margin-bottom:16px">
-        <div class="logo-icon"><svg viewBox="0 0 24 24"><path d="M3 10.5L12 3l9 7.5V21H3V10.5z"/></svg></div>
-        <span class="logo-name" style="color:#fff">Dailio</span>
-      </a>
-      <p>Especialistas em engenharia, obras e energia solar. Mais de 18 anos transformando projetos em realidade com excelência e transparência.</p>
+      <div style="display: flex; gap: 15px; align-items: center; margin-bottom: 20px;">
+        <a href="index.html" class="logo">
+          <img src="assets/logo3.png" alt="Logo Dailio" style="height: 60px;">
+        </a>
+        <img src="assets/logo4.png" alt="Logo Secundária" style="height: 60px;">
+      </div>
+      <p class="ft-desc">Especialistas em engenharia, obras e energia solar. Mais de 18 anos transformando projetos em realidade com excelência e transparência.</p>
       <div class="ft-socials" style="margin-top:20px">
         <a href="#" class="ft-soc">in</a>
         <a href="#" class="ft-soc">ig</a>
@@ -444,24 +449,22 @@
     <div class="ft-col">
       <h6>Contato</h6>
       <ul>
-        <li><a href="tel:+5511999999999">(11) 99999-9999</a></li>
+        <li><a href="tel:+5532999646275">(32) 99964-6275</a></li>
         <li><a href="mailto:contato@dailio.com.br">contato@dailio.com.br</a></li>
         <li><a href="#">São Paulo, SP</a></li>
-        <li><a href="https://wa.me/5511999999999" target="_blank" rel="noopener">WhatsApp</a></li>
+        <li><a href="https://wa.me/5532999646275" target="_blank" rel="noopener">WhatsApp</a></li>
         <li><a href="#contato">Orçamento Grátis</a></li>
       </ul>
     </div>
   </div>
   <div class="ft-bottom">
-    <p class="ft-copy">© 2025 Dailio Construtora. Todos os direitos reservados.</p>
+    <p class="ft-copy">© 2025 Dailio Construtora. Todos os direitos reservados. | <a href="https://camaly.com.br/" target="_blank" rel="noopener" style="color: inherit; text-decoration: none;">Produzida com 💚 por CAMALY</a></p>
     <div class="ft-links">
       <a href="#">Política de Privacidade</a>
       <a href="#">Termos de Uso</a>
     </div>
   </div>
-  <div class="ft-brand-big">
-    <span class="ft-brand-big-text">DAILIO<sup class="ft-tm">™</sup></span>
-  </div>
+
 </footer>
 
 <script src="assets/js/home.js"></script>
