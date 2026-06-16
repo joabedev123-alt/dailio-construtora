@@ -16,17 +16,17 @@
 <nav>
   <div class="nav-in">
     <a href="index.html" class="logo">
-      <img src="assets/logo.png" alt="Logo Dailio" style="height: 60px;">
+      <img src="assets/logo.png" alt="Logo Dailio" style="height: 80px;">
     </a>
     <ul class="nav-links">
       <li><a href="#" class="active">Home</a></li>
       <li><a href="#servicos">Serviços</a></li>
       <li><a href="#portfolio">Projetos</a></li>
       <li><a href="#depoimentos">Blog</a></li>
-      <li><a href="#contato">Contato</a></li>
+      <li><a href="https://wa.me/5532999646275" target="_blank">Contato</a></li>
     </ul>
     <div class="nav-end">
-      <a href="#contato" class="nav-cta-btn">Orçamento Grátis →</a>
+      <a href="https://wa.me/5532999646275" target="_blank" class="nav-cta-btn">Fale com um especialista →</a>
     </div>
   </div>
 </nav>
@@ -54,9 +54,9 @@
       </h1>
       <p class="hero-desc">Somos especialistas em projetos de engenharia, execução de obras e instalação de energia solar. Mais de 500 projetos entregues com excelência, no prazo e no orçamento.</p>
       <div class="hero-btns">
-        <a href="#contato" class="btn-y">
+        <a href="https://wa.me/5532999646275" target="_blank" class="btn-y">
           <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-          Solicitar Orçamento Grátis
+          Fale com um especialista
         </a>
         <a href="#portfolio" class="btn-outline-y">Ver Projetos →</a>
       </div>
@@ -73,17 +73,17 @@
       </div>
     </div>
     <div class="hero-right">
-      <div class="hc-white">
+      <a href="#torre-comercial" class="hc-white" style="display: block; cursor: pointer; text-decoration: none; color: inherit;">
         <div class="hc-white-img"><img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=600&q=80" alt="Projeto"/></div>
         <div class="hc-white-foot">
           <div><div class="hc-proj">Residência Moderna</div><div class="hc-year">Entregue 2024</div></div>
           <div class="hc-btn"><svg viewBox="0 0 24 24"><path d="M7 17L17 7M7 7h10v10"/></svg></div>
         </div>
-      </div>
+      </a>
       <div class="hc-yellow">
         <div class="hc-y-icon"><svg viewBox="0 0 24 24"><path d="M3 10.5L12 3l9 7.5V21H3V10.5z"/></svg></div>
-        <div class="hc-y-title">Orçamento 100% gratuito e sem compromisso</div>
-        <a href="#contato" class="hc-y-link">Solicitar agora →</a>
+        <div class="hc-y-title">Fale com um especialista e tire suas dúvidas</div>
+        <a href="https://wa.me/5532999646275" target="_blank" class="hc-y-link">Solicitar agora →</a>
       </div>
     </div>
   </div>
@@ -107,7 +107,7 @@
         <div class="sec-badge"><div class="sec-badge-dot"></div><span class="sec-badge-txt sec-badge--white" style="color:rgba(255,255,255,.45)">O Que Fazemos</span></div>
         <h2 class="sec-h2 sec-h2--white">Nossas Áreas<br>de Atuação</h2>
       </div>
-      <a href="#contato" class="btn-y">Solicitar Orçamento →</a>
+      <a href="https://wa.me/5532999646275" target="_blank" class="btn-y">Fale com um especialista →</a>
     </div>
     <div class="svc-grid">
       <div class="svc-card">
@@ -222,7 +222,7 @@
         <div class="sec-badge"><div class="sec-badge-dot"></div><span class="sec-badge-txt">Portfólio</span></div>
         <h2 class="sec-h2">Projetos Realizados</h2>
       </div>
-      <a href="#contato" class="btn-y">Quero um projeto assim →</a>
+      <a href="https://wa.me/5532999646275" target="_blank" class="btn-y">Quero um projeto assim →</a>
     </div>
     <div class="port-filters">
       <button class="filter-btn active">Todos</button>
@@ -231,7 +231,7 @@
       <button class="filter-btn">Energia Solar</button>
     </div>
     <div class="port-grid">
-      <div class="port-card">
+      <div class="port-card" id="torre-comercial">
         <div class="port-card-img" style="position: relative;">
           <div class="carousel-track" style="display: flex; overflow-x: hidden; scroll-snap-type: x mandatory; scrollbar-width: none; height: 100%; width: 100%;">
             <img src="public/imagens%20eng/02.jpeg" alt="Torre Comercial 02" style="flex: 0 0 100%; object-fit: cover; scroll-snap-align: start; min-width: 100%;">
@@ -243,7 +243,7 @@
           <button style="position: absolute; left: 8px; top: 50%; transform: translateY(-50%); background: rgba(255,255,255,0.8); color: #1a1a1a; border: none; width: 28px; height: 28px; display: flex; align-items: center; justify-content: center; cursor: pointer; border-radius: 50%; z-index: 10; font-size: 14px; box-shadow: 0 2px 5px rgba(0,0,0,0.2);" onclick="event.preventDefault(); event.stopPropagation(); this.parentElement.querySelector('.carousel-track').scrollBy({left: -this.parentElement.querySelector('.carousel-track').clientWidth, behavior: 'smooth'})">❮</button>
           <button style="position: absolute; right: 8px; top: 50%; transform: translateY(-50%); background: rgba(255,255,255,0.8); color: #1a1a1a; border: none; width: 28px; height: 28px; display: flex; align-items: center; justify-content: center; cursor: pointer; border-radius: 50%; z-index: 10; font-size: 14px; box-shadow: 0 2px 5px rgba(0,0,0,0.2);" onclick="event.preventDefault(); event.stopPropagation(); this.parentElement.querySelector('.carousel-track').scrollBy({left: this.parentElement.querySelector('.carousel-track').clientWidth, behavior: 'smooth'})">❯</button>
         </div>
-        <div class="port-overlay"><a href="#contato" class="port-see">Ver Projeto →</a></div>
+        <div class="port-overlay"><a href="https://wa.me/5532999646275" target="_blank" class="port-see">Ver Projeto →</a></div>
         <div class="port-card-foot"><div class="port-cat">Engenharia · Comercial</div><div class="port-name">Torre Corporativa</div><div class="port-loc">Campinas, SP · 2023</div></div>
       </div>
       <div class="port-card">
@@ -257,7 +257,7 @@
           <button style="position: absolute; left: 8px; top: 50%; transform: translateY(-50%); background: rgba(255,255,255,0.8); color: #1a1a1a; border: none; width: 28px; height: 28px; display: flex; align-items: center; justify-content: center; cursor: pointer; border-radius: 50%; z-index: 10; font-size: 14px; box-shadow: 0 2px 5px rgba(0,0,0,0.2);" onclick="event.preventDefault(); event.stopPropagation(); this.parentElement.querySelector('.carousel-track').scrollBy({left: -this.parentElement.querySelector('.carousel-track').clientWidth, behavior: 'smooth'})">❮</button>
           <button style="position: absolute; right: 8px; top: 50%; transform: translateY(-50%); background: rgba(255,255,255,0.8); color: #1a1a1a; border: none; width: 28px; height: 28px; display: flex; align-items: center; justify-content: center; cursor: pointer; border-radius: 50%; z-index: 10; font-size: 14px; box-shadow: 0 2px 5px rgba(0,0,0,0.2);" onclick="event.preventDefault(); event.stopPropagation(); this.parentElement.querySelector('.carousel-track').scrollBy({left: this.parentElement.querySelector('.carousel-track').clientWidth, behavior: 'smooth'})">❯</button>
         </div>
-        <div class="port-overlay"><a href="#contato" class="port-see">Ver Projeto →</a></div>
+        <div class="port-overlay"><a href="https://wa.me/5532999646275" target="_blank" class="port-see">Ver Projeto →</a></div>
         <div class="port-card-foot"><div class="port-cat">Obras · Residencial</div><div class="port-name">Residência Alto Padrão</div><div class="port-loc">São Paulo, SP · 2024</div></div>
       </div>
       <div class="port-card">
@@ -272,7 +272,7 @@
           <button style="position: absolute; left: 8px; top: 50%; transform: translateY(-50%); background: rgba(255,255,255,0.8); color: #1a1a1a; border: none; width: 28px; height: 28px; display: flex; align-items: center; justify-content: center; cursor: pointer; border-radius: 50%; z-index: 10; font-size: 14px; box-shadow: 0 2px 5px rgba(0,0,0,0.2);" onclick="event.preventDefault(); event.stopPropagation(); this.parentElement.querySelector('.carousel-track').scrollBy({left: -this.parentElement.querySelector('.carousel-track').clientWidth, behavior: 'smooth'})">❮</button>
           <button style="position: absolute; right: 8px; top: 50%; transform: translateY(-50%); background: rgba(255,255,255,0.8); color: #1a1a1a; border: none; width: 28px; height: 28px; display: flex; align-items: center; justify-content: center; cursor: pointer; border-radius: 50%; z-index: 10; font-size: 14px; box-shadow: 0 2px 5px rgba(0,0,0,0.2);" onclick="event.preventDefault(); event.stopPropagation(); this.parentElement.querySelector('.carousel-track').scrollBy({left: this.parentElement.querySelector('.carousel-track').clientWidth, behavior: 'smooth'})">❯</button>
         </div>
-        <div class="port-overlay"><a href="#contato" class="port-see">Ver Projeto →</a></div>
+        <div class="port-overlay"><a href="https://wa.me/5532999646275" target="_blank" class="port-see">Ver Projeto →</a></div>
         <div class="port-card-foot"><div class="port-cat">Energia Solar · Industrial</div><div class="port-name">Usina Solar Industrial</div><div class="port-loc">Ribeirão Preto, SP · 2024</div></div>
       </div>
     </div>
@@ -361,7 +361,7 @@
   <div class="ct-in">
     <div>
       <div class="ct-badge">Fale com um Especialista</div>
-      <h2 class="ct-h2">Solicite seu<br>orçamento<br>gratuito.</h2>
+      <h2 class="ct-h2">Fale com um<br>especialista e<br>tire suas dúvidas.</h2>
       <p class="ct-p">Preencha o formulário e receba uma proposta personalizada em até 24 horas. Sem compromisso, sem letras miúdas.</p>
       <div class="ct-info">
         <div class="ct-info-item">
@@ -379,7 +379,7 @@
       </div>
     </div>
     <div class="ct-form">
-      <div class="ct-form-title">Orçamento Gratuito</div>
+      <div class="ct-form-title">Fale com um especialista</div>
       <div class="ct-form-sub">Resposta em até 4 horas · Sem compromisso</div>
       <form>
         <div class="form-2col">
@@ -398,8 +398,8 @@
           </select>
         </div>
         <div class="form-row"><textarea class="form-field" placeholder="Descreva brevemente seu projeto..."></textarea></div>
-        <button type="submit" class="form-submit">
-          Solicitar Orçamento Grátis
+        <button type="submit" class="form-submit" onclick="window.open('https://wa.me/5532999646275', '_blank'); return false;">
+          Fale com um especialista
           <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
         </button>
         <div class="form-note">🔒 Seus dados estão seguros. <span>Não enviamos spam.</span></div>
@@ -453,7 +453,7 @@
         <li><a href="mailto:contato@dailio.com.br">contato@dailio.com.br</a></li>
         <li><a href="#">São Paulo, SP</a></li>
         <li><a href="https://wa.me/5532999646275" target="_blank" rel="noopener">WhatsApp</a></li>
-        <li><a href="#contato">Orçamento Grátis</a></li>
+        <li><a href="https://wa.me/5532999646275" target="_blank">Fale com um especialista</a></li>
       </ul>
     </div>
   </div>
