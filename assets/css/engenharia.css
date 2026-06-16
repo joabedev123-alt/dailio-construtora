@@ -1,0 +1,74 @@
+/* ─── HERO ───────────────────────────────────────────────── */
+#hero{position:relative;min-height:85vh;overflow:hidden;display:flex;align-items:center}
+.hero-bg img{object-position:center 30%}
+.hero-btns{margin-bottom:0}
+
+/* ─── OVERVIEW ───────────────────────────────────────────── */
+#overview{background:#fff;padding:88px 0}
+.overview-grid{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center}
+.overview-img{border-radius:14px;overflow:hidden;box-shadow:0 24px 60px rgba(0,0,0,.1);position:relative}
+.overview-img img{aspect-ratio:4/3}
+.overview-badge{
+  position:absolute;bottom:24px;right:-20px;background:#fff;border-radius:12px;
+  padding:16px 20px;box-shadow:0 12px 40px rgba(0,0,0,.15);
+  display:flex;align-items:center;gap:12px;border-left:4px solid var(--y);
+}
+.ov-num{font-size:1.8rem;font-weight:900;color:var(--dk);line-height:1}
+.ov-txt{font-size:.72rem;color:var(--mt);line-height:1.35}
+.overview-text .sec-p{margin-bottom:32px}
+.check-list{display:flex;flex-direction:column;gap:12px}
+.check-item{display:flex;align-items:flex-start;gap:12px;font-size:.88rem;color:var(--dk);line-height:1.5}
+.check-icon{width:22px;height:22px;border-radius:50%;background:var(--y);display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px}
+.check-icon svg{width:11px;height:11px;stroke:var(--dk);stroke-width:2.8;fill:none;stroke-linecap:round;stroke-linejoin:round}
+
+/* ─── TIPOS ──────────────────────────────────────────────── */
+#tipos{background:var(--lt);padding:88px 0}
+.tipos-header{text-align:center;margin-bottom:56px}
+.tipos-header .sec-badge{justify-content:center}
+.tipos-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.tipo-card{background:#fff;border-radius:14px;overflow:hidden;border:1px solid var(--br);transition:box-shadow .2s,transform .2s}
+.tipo-card:hover{box-shadow:0 16px 48px rgba(0,0,0,.09);transform:translateY(-4px)}
+.tipo-card-img{height:200px;overflow:hidden}
+.tipo-card-img img{transition:transform .45s}
+.tipo-card:hover .tipo-card-img img{transform:scale(1.06)}
+.tipo-card-body{padding:24px 22px}
+.tipo-icon{width:44px;height:44px;border-radius:10px;background:rgba(245,193,0,.12);display:flex;align-items:center;justify-content:center;margin-bottom:14px}
+.tipo-icon svg{width:20px;height:20px;stroke:var(--y);stroke-width:1.9;fill:none;stroke-linecap:round;stroke-linejoin:round}
+.tipo-title{font-size:1rem;font-weight:800;color:var(--dk);margin-bottom:8px}
+.tipo-desc{font-size:.8rem;color:var(--mt);line-height:1.68}
+.tipo-tag{display:inline-block;margin-top:14px;background:rgba(245,193,0,.12);color:var(--y);font-size:.67rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:4px 12px;border-radius:100px}
+
+/* ─── PROCESSO (dark bg) ─────────────────────────────────── */
+#processo{background:var(--dk);padding:88px 0}
+.proc-head{text-align:center;margin-bottom:64px}
+.proc-head .sec-badge{justify-content:center}
+.proc-head .sec-badge .sec-lbl{color:rgba(255,255,255,.45)}
+.proc-steps{display:grid;grid-template-columns:repeat(4,1fr);gap:24px}
+.proc-step{text-align:center;padding:0 10px}
+.proc-num-wrap{display:flex;align-items:center;justify-content:center;margin-bottom:20px;position:relative}
+.proc-num{width:64px;height:64px;border-radius:50%;background:var(--y);color:var(--dk);font-size:1.1rem;font-weight:900;display:flex;align-items:center;justify-content:center;box-shadow:0 8px 24px rgba(245,193,0,.35)}
+.proc-step-title{font-size:.92rem;font-weight:800;color:#fff;margin-bottom:8px}
+.proc-step-txt{font-size:.78rem;color:rgba(255,255,255,.5);line-height:1.65}
+
+/* ─── DIFERENCIAIS (card grid) ───────────────────────────── */
+#diferenciais{background:#fff;padding:88px 0}
+.dif-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+.dif-card{padding:28px 26px;border:1px solid var(--br);border-radius:14px;display:flex;gap:16px;align-items:flex-start;transition:border-color .2s,box-shadow .2s}
+.dif-card:hover{border-color:var(--y);box-shadow:0 8px 28px rgba(245,193,0,.12)}
+.dif-ico{width:48px;height:48px;border-radius:10px;background:rgba(245,193,0,.1);display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.dif-ico svg{width:22px;height:22px;stroke:var(--y);stroke-width:1.8;fill:none;stroke-linecap:round;stroke-linejoin:round}
+.dif-title{font-size:.9rem;font-weight:800;color:var(--dk);margin-bottom:6px}
+.dif-txt{font-size:.8rem;color:var(--mt);line-height:1.65}
+
+/* ─── CTA ────────────────────────────────────────────────── */
+#cta-sec::before{content:'ENGENHARIA'}
+
+/* ─── RESPONSIVE ─────────────────────────────────────────── */
+@media(max-width:1024px){
+  .overview-grid,.tipos-grid,.dif-grid{grid-template-columns:1fr}
+  .proc-steps{grid-template-columns:1fr 1fr;gap:32px}
+  .overview-badge{right:12px}
+}
+@media(max-width:640px){
+  .proc-steps{grid-template-columns:1fr}
+}

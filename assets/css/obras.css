@@ -1,0 +1,78 @@
+/* ─── HERO ───────────────────────────────────────────────── */
+#hero{position:relative;min-height:85vh;overflow:hidden;display:flex;align-items:center}
+.hero-bg img{object-position:center 40%}
+.hero-btns{margin-bottom:40px}
+
+/* ─── TIPOS DE OBRAS (com tabs) ──────────────────────────── */
+#tipos{background:#fff;padding:88px 0}
+.tipos-header{margin-bottom:56px}
+.tipos-tabs{display:flex;gap:8px;margin-bottom:40px;flex-wrap:wrap}
+.tab-btn{
+  padding:10px 22px;border-radius:100px;font-size:.78rem;font-weight:700;
+  border:1.5px solid var(--br);color:var(--mt);background:#fff;
+  cursor:pointer;transition:all .18s;
+}
+.tab-btn.active,.tab-btn:hover{background:var(--dk);color:#fff;border-color:var(--dk)}
+.tipos-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.tipo-card{border-radius:14px;overflow:hidden;border:1px solid var(--br);background:#fff;transition:box-shadow .2s,transform .2s;cursor:pointer}
+.tipo-card:hover{box-shadow:0 16px 48px rgba(0,0,0,.09);transform:translateY(-4px)}
+.tipo-img{height:200px;overflow:hidden}
+.tipo-img img{transition:transform .45s}
+.tipo-card:hover .tipo-img img{transform:scale(1.06)}
+.tipo-body{padding:22px}
+.tipo-tag{display:inline-block;background:rgba(245,193,0,.12);color:var(--y);font-size:.65rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:4px 12px;border-radius:100px;margin-bottom:10px}
+.tipo-title{font-size:1rem;font-weight:800;color:var(--dk);margin-bottom:8px}
+.tipo-desc{font-size:.8rem;color:var(--mt);line-height:1.65}
+
+/* ─── GARANTIAS (dark bg) ────────────────────────────────── */
+#garantias{background:var(--dk);padding:88px 0}
+.gar-grid{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center}
+.gar-img-wrap{border-radius:14px;overflow:hidden;box-shadow:0 24px 60px rgba(0,0,0,.35)}
+.gar-img-wrap img{aspect-ratio:4/3}
+.gar-items{display:flex;flex-direction:column;gap:24px;margin-top:32px}
+.gar-item{display:flex;align-items:flex-start;gap:16px}
+.gar-num{width:40px;height:40px;border-radius:8px;background:var(--y);color:var(--dk);font-size:.88rem;font-weight:900;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.gar-title{font-size:.92rem;font-weight:700;color:#fff;margin-bottom:4px}
+.gar-txt{font-size:.8rem;color:rgba(255,255,255,.5);line-height:1.6}
+
+/* ─── PROCESSO (5 etapas, --lt bg) ──────────────────────── */
+#processo{background:var(--lt);padding:88px 0}
+.proc-head{text-align:center;margin-bottom:64px}
+.proc-head .sec-badge{justify-content:center}
+.proc-steps{display:grid;grid-template-columns:repeat(5,1fr);gap:16px;position:relative}
+.proc-steps::before{content:'';position:absolute;top:32px;left:10%;right:10%;height:2px;background:repeating-linear-gradient(90deg,var(--y) 0,var(--y) 8px,transparent 8px,transparent 16px);z-index:0}
+.proc-step{display:flex;flex-direction:column;align-items:center;text-align:center;padding:0 10px;position:relative;z-index:1}
+.proc-num{width:64px;height:64px;border-radius:50%;background:var(--y);color:var(--dk);font-size:1.1rem;font-weight:900;display:flex;align-items:center;justify-content:center;margin-bottom:18px;box-shadow:0 8px 24px rgba(245,193,0,.35)}
+.proc-step-title{font-size:.86rem;font-weight:800;color:var(--dk);margin-bottom:6px}
+.proc-step-txt{font-size:.76rem;color:var(--mt);line-height:1.55}
+
+/* ─── PORTFOLIO ──────────────────────────────────────────── */
+#portfolio{background:#fff;padding:88px 0}
+.port-header{display:flex;align-items:flex-end;justify-content:space-between;margin-bottom:40px}
+.port-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.port-card{border-radius:12px;overflow:hidden;background:var(--lt);border:1px solid var(--br);cursor:pointer}
+.port-card-img{height:220px;overflow:hidden;position:relative}
+.port-card-img img{transition:transform .45s}
+.port-card:hover .port-card-img img{transform:scale(1.07)}
+.port-overlay{position:absolute;inset:0;background:linear-gradient(to bottom,transparent 40%,rgba(26,26,26,.82));opacity:0;transition:opacity .3s;display:flex;align-items:flex-end;padding:18px}
+.port-card:hover .port-overlay{opacity:1}
+.port-see{display:inline-flex;align-items:center;gap:6px;background:var(--y);color:var(--dk);padding:8px 16px;border-radius:100px;font-size:.74rem;font-weight:800}
+.port-foot{padding:16px 18px}
+.port-cat{font-size:.65rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--y);margin-bottom:4px}
+.port-name{font-size:.9rem;font-weight:700;color:var(--dk)}
+.port-detail{font-size:.74rem;color:var(--mt);margin-top:3px}
+
+/* ─── CTA ────────────────────────────────────────────────── */
+#cta-sec::before{content:'OBRAS'}
+
+/* ─── RESPONSIVE ─────────────────────────────────────────── */
+@media(max-width:1024px){
+  .tipos-grid,.port-grid{grid-template-columns:1fr 1fr}
+  .gar-grid{grid-template-columns:1fr}
+  .proc-steps{grid-template-columns:1fr 1fr;gap:32px}
+  .proc-steps::before{display:none}
+  .port-header{flex-direction:column;align-items:flex-start;gap:16px}
+}
+@media(max-width:640px){
+  .tipos-grid,.port-grid,.proc-steps{grid-template-columns:1fr}
+}
