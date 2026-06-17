@@ -161,7 +161,7 @@
 }
 .filter-btn.active,.filter-btn:hover{background:var(--dk);color:#fff;border-color:var(--dk)}
 .port-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
-.port-card{position:relative;border-radius:12px;overflow:hidden;cursor:pointer;background:#fff;box-shadow:0 4px 16px rgba(0,0,0,.07)}
+.port-card{position:relative;border-radius:12px;overflow:hidden;cursor:pointer;background:#fff;box-shadow:0 4px 16px rgba(0,0,0,.07);scroll-margin-top:100px}
 .port-card-img{height:220px;overflow:hidden}
 .port-card-img img{transition:transform .45s}
 .port-card:hover .port-card-img img{transform:scale(1.07)}
