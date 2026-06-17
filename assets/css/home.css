@@ -169,11 +169,13 @@
   position:absolute;inset:0;
   background:linear-gradient(to bottom,transparent 40%,rgba(26,26,26,.85));
   opacity:0;transition:opacity .3s;display:flex;align-items:flex-end;padding:20px;
+  pointer-events: none;
 }
 .port-card:hover .port-overlay{opacity:1}
 .port-see{
   display:inline-flex;align-items:center;gap:7px;background:var(--y);color:var(--dk);
   padding:9px 18px;border-radius:100px;font-size:.75rem;font-weight:800;
+  pointer-events: auto;
 }
 .port-card-foot{padding:16px 18px}
 .port-cat{font-size:.65rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--y);margin-bottom:4px}

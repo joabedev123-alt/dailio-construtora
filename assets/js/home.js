@@ -33,3 +33,78 @@ window.addEventListener('scroll', () => {
     if (a.getAttribute('href') === '#' + current) a.classList.add('active');
   });
 }, {passive: true});
+
+// Lightbox para imagens do portfólio
+const lightbox = document.getElementById('lightbox');
+const lightboxImg = document.getElementById('lightbox-img');
+const lightboxClose = document.getElementById('lightbox-close');
+const lightboxPrev = document.getElementById('lightbox-prev');
+const lightboxNext = document.getElementById('lightbox-next');
+
+if (lightbox && lightboxImg && lightboxClose) {
+  let currentGroup = [];
+  let currentIndex = 0;
+
+  // Abrir lightbox ao clicar nas imagens
+  document.querySelectorAll('.carousel-track').forEach(track => {
+    const imgs = Array.from(track.querySelectorAll('img'));
+    imgs.forEach((img, index) => {
+      img.style.cursor = 'pointer';
+      img.addEventListener('click', () => {
+        currentGroup = imgs;
+        currentIndex = index;
+        lightboxImg.src = img.src;
+        lightbox.style.display = 'flex';
+      });
+    });
+  });
+
+  const updateImage = () => {
+    if (currentGroup.length > 0) {
+      lightboxImg.src = currentGroup[currentIndex].src;
+    }
+  };
+
+  if (lightboxPrev) {
+    lightboxPrev.addEventListener('click', (e) => {
+      e.stopPropagation();
+      currentIndex = (currentIndex > 0) ? currentIndex - 1 : currentGroup.length - 1;
+      updateImage();
+    });
+  }
+
+  if (lightboxNext) {
+    lightboxNext.addEventListener('click', (e) => {
+      e.stopPropagation();
+      currentIndex = (currentIndex < currentGroup.length - 1) ? currentIndex + 1 : 0;
+      updateImage();
+    });
+  }
+
+  // Fechar no botão X
+  lightboxClose.addEventListener('click', () => {
+    lightbox.style.display = 'none';
+  });
+
+  // Fechar ao clicar fora da imagem
+  lightbox.addEventListener('click', (e) => {
+    if (e.target === lightbox) {
+      lightbox.style.display = 'none';
+    }
+  });
+
+  // Teclado (ESC e Setas)
+  document.addEventListener('keydown', (e) => {
+    if (lightbox.style.display === 'flex') {
+      if (e.key === 'Escape') lightbox.style.display = 'none';
+      if (e.key === 'ArrowLeft') {
+        currentIndex = (currentIndex > 0) ? currentIndex - 1 : currentGroup.length - 1;
+        updateImage();
+      }
+      if (e.key === 'ArrowRight') {
+        currentIndex = (currentIndex < currentGroup.length - 1) ? currentIndex + 1 : 0;
+        updateImage();
+      }
+    }
+  });
+}
